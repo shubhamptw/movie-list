@@ -1,0 +1,61 @@
+.wrapper-home{
+    display:flex;
+    width: 100%;
+    flex-flow: column ;
+    /* justify-content: start; */
+    /* background-color: white; */
+    align-items: center;
+    /* height: 800px; */
+}
+ul{
+    list-style: none;
+}
+table,
+td {
+    border: 1px solid #333;
+}
+
+thead,
+tfoot {
+    background-color: #333;
+    color: #fff;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+
+
+}
+td, th {
+    border: 1px solid #000000;
+    text-align: left;
+    padding: 8px;
+    
+}
+tr{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around; 
+}
+
+
+.button-add-movie{
+    height: 40px;
+    width: 60%;
+    margin: 50px 0%;
+    background-color: teal;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+select{
+    text-align: center;
+    
+}
+div{
+    width: 100%;
+
+}
