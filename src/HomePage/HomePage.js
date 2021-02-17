@@ -8,8 +8,8 @@ import { actionDelete } from '../action';
 const HomePage = () => {
 
     const myMovie=useSelector(state=>state);
-    const localMovieStore=[...myMovie];
-    const [duplicateMovie, setDuplicateMovie]=useState(myMovie);
+    let localMovieStore=[...myMovie];
+    let [duplicateMovie, setDuplicateMovie]=useState(myMovie);
     const dispatch=useDispatch();
     console.log(myMovie);
 
