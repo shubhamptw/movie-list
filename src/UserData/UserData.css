@@ -1,0 +1,15 @@
+.col-id{
+    flex-basis: 10%;
+}
+.col-name{
+    flex-basis: 10%;
+}
+.col-username{
+    flex-basis: 10%;
+}
+.col-email{
+    flex-basis: 10%;
+}
+.col-address{
+    flex-basis: 10%;
+}

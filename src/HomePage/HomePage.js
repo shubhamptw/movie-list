@@ -21,9 +21,6 @@ const HomePage = () => {
 
     }, [myMovie]);
 
-    //console
-
-
 
     const handleDeleteClicked=(e)=>{
         const updatedList=myMovie.filter((movie)=>{
@@ -108,7 +105,7 @@ const HomePage = () => {
                 {
    
                     duplicateMovie.map((movie)=>(
-                        <div className>
+                        <div >
                             <table>      
                                 <tbody>
                                     <tr>
