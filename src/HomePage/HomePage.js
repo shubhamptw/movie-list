@@ -21,6 +21,8 @@ const HomePage = () => {
 
     }, [myMovie]);
 
+    //console
+
 
 
     const handleDeleteClicked=(e)=>{
