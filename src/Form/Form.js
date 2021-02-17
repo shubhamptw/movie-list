@@ -29,7 +29,7 @@ const Form = (props) => {
              let index=props.location.state;
              console.log(index);
              let editMovie=myMovie.filter((movie)=>{
-                 return movie.movieId==index;
+                 return movie.movieId===index;
              });
 
              setMovieId(editMovie[0].movieId);

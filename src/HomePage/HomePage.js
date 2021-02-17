@@ -4,6 +4,9 @@ import {Link} from 'react-router-dom'
 
 import {useSelector, useDispatch} from 'react-redux'
 import { actionDelete } from '../action';
+import userEvent from '@testing-library/user-event';
+import {useEffect} from 'react'
+
 
 const HomePage = () => {
 
@@ -12,6 +15,11 @@ const HomePage = () => {
     let [duplicateMovie, setDuplicateMovie]=useState(myMovie);
     const dispatch=useDispatch();
     console.log(myMovie);
+
+    useEffect(()=>{
+        setDuplicateMovie(myMovie);
+
+    }, [myMovie]);
 
 
 
@@ -83,13 +91,13 @@ const HomePage = () => {
                 <table>
                     <thead>
                         <tr>
-                            <td >Name</td>
-                            <td >Year</td>
-                            <td >Rating</td>
-                            <td >Genre</td>
-                            <td >Description</td>
-                            <td >Edit</td>
-                            <td >Delete</td>
+                            <td className="col1">Name</td>
+                            <td className="col2">Year</td>
+                            <td className="col3">Rating</td>
+                            <td className="col4">Genre</td>
+                            <td className="col5">Description</td>
+                            <td className="col6">Edit</td>
+                            <td className="col7">Delete</td>
                         </tr>
                     </thead>
 
@@ -102,18 +110,18 @@ const HomePage = () => {
                             <table>      
                                 <tbody>
                                     <tr>
-                                        <td >{movie.movieName}</td>
-                                        <td >{movie.movieYear}</td>
-                                        <td >{movie.movieRating}</td>
-                                        <td >{movie.movieGenre}</td>
-                                        <td >{movie.movieDescription}</td>
-                                        <td>
+                                        <td className="col1">{movie.movieName}</td>
+                                        <td className="col2">{movie.movieYear}</td>
+                                        <td className="col3">{movie.movieRating}</td>
+                                        <td className="col4">{movie.movieGenre}</td>
+                                        <td className="col5">{movie.movieDescription}</td>
+                                        <td className="col6">
                                             <Link to={{pathname:'/form', state:movie.movieId}}>
                                                 <button value={movie.movieId}>Edit</button>
                                             </Link>
 
                                             </td>
-                                        <td><button value={movie.movieId}onClick={handleDeleteClicked}>Delete</button></td>
+                                        <td className="col7"><button value={movie.movieId}onClick={handleDeleteClicked}>Delete</button></td>
                                     </tr>
                                 </tbody>
                             </table>
