@@ -10,7 +10,7 @@ import {useEffect} from 'react'
 
 const HomePage = () => {
 
-    const myMovie=useSelector(state=>state);
+    const myMovie=useSelector(state=>state.mainReducer);
     let localMovieStore=[...myMovie];
     let [duplicateMovie, setDuplicateMovie]=useState(myMovie);
     const dispatch=useDispatch();

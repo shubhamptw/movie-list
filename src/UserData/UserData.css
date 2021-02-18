@@ -2,14 +2,14 @@
     flex-basis: 10%;
 }
 .col-name{
-    flex-basis: 10%;
+    flex-basis: 20%;
 }
 .col-username{
-    flex-basis: 10%;
+    flex-basis: 20%;
 }
 .col-email{
-    flex-basis: 10%;
+    flex-basis: 20%;
 }
 .col-address{
-    flex-basis: 10%;
+    flex-basis: 30%;
 }

@@ -14,8 +14,8 @@ table{
     border: 1px solid #333;
 }
 
-thead,
-tfoot {
+thead{
+    height: 70px;
     background-color: #333;
     color: #fff;
 }
@@ -31,11 +31,11 @@ table {
 tr{
     width: 100%;
     height: 40px;
-    text-align: center;
+    text-align: start;
     display: flex;
     flex-flow: row wrap;
     align-content: center;
-    justify-content: space-between; 
+    justify-content: space-around;
 }
 .col1{
     flex-basis: 20%;
@@ -82,9 +82,3 @@ div{
     width: 100%;
 
 }
-
-
-
-
-
-

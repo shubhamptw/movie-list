@@ -2,14 +2,12 @@ import React, { Component, useEffect, useState } from 'react';
 
 
 
-
-
-
 const UserData = () => {
 
 
     const[data, setData]=useState(null);
     const[loading, setLoading]=useState(true);
+    // console.log("rerender");
 
     useEffect(async()=>{
           const response= await fetch("https://jsonplaceholder.typicode.com/users");
@@ -51,7 +49,7 @@ const UserData = () => {
                                     <td className="col-name">{list.name}</td>
                                     <td className="col-username">{list.username}</td>
                                     <td className="col-email">{list.email}</td>
-                                    <td className="col-address">{list.address.street}</td>
+                                    <td className="col-address">{list.address.street+", "}{list.address.suite+", "}{list.address.city}</td>
 
                                 </tr>
                             </tbody>

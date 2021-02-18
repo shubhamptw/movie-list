@@ -7,7 +7,6 @@ const mainReducer=(state=[], action)=>{
              updatedState[id]=action.payload;
             return updatedState;
 
-
         case 'DELETE':
             return action.payload;
         case 'ADD':

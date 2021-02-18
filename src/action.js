@@ -17,3 +17,11 @@ export const actionAdd=(movie)=>{
         payload: movie
      };
 }
+
+export const actionPaginate=(data)=>{
+    return {
+        type: 'PAGINATE',
+        payload: data
+    }
+
+}

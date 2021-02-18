@@ -7,7 +7,7 @@ import {actionDelete, actionEdit, actionAdd} from '/Users/oyo/Documents/ReactBas
 
 const Form = (props) => {
 
-    const myMovie=useSelector(state=>state);
+    const myMovie=useSelector(state=>state.mainReducer);
     const dispatch=useDispatch();
 
 
