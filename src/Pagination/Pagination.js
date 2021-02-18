@@ -8,7 +8,7 @@ const Pagination = () => {
 
     const myStorePaginationData=useSelector(state=>state.reducerPagination);
     const dispatch=useDispatch();
-    console.log(myStorePaginationData);
+    // console.log(myStorePaginationData);
 
 
     const[data, setData]=useState(null);
